@@ -1,0 +1,10 @@
+/* Correct usage of calc() function */
+#container {
+  width: calc(100% - (20px + 5%)); /*Correct way to use parenthesis*/
+}
+
+/* Incorrect usage of calc() function */
+#container2 {
+  /*width:calc(100%-20px+5%);*/ /* Incorrect spacing and order of operations */
+  width: calc(100% - 20px + 5%); /* Correct spacing, but order of operations might be unexpected */
+}
